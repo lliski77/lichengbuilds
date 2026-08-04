@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06080b" />
+    <meta name="description" content="Licheng Liu is a high school engineer from Philadelphia building playful electronics with Arduino, ESP32, displays, sensors, and computer vision." />
+    <meta property="og:title" content="Licheng Liu — Engineering in Motion" />
+    <meta property="og:description" content="A collection of small screens, smart sensors, and playful machines—designed and built in Philadelphia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lliski77.github.io/lichengbuilds/" />
+    <meta property="og:image" content="https://lliski77.github.io/lichengbuilds/assets/images/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Licheng Liu — Engineering in Motion" />
+    <meta name="twitter:description" content="Electronics, embedded systems, and computer vision projects by Licheng Liu." />
+    <meta name="twitter:image" content="https://lliski77.github.io/lichengbuilds/assets/images/og.png" />
+    <title>Licheng Liu — Student Engineer & Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="nav-shell">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="mark" href="#top" aria-label="Licheng Liu, home"><span>LL</span><i></i></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects <span>05</span></a>
+          <a class="nav-contact" href="https://www.instagram.com/ll_ski77/" target="_blank" rel="noreferrer">Say hello ↗</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-kicker reveal"><span class="live-dot"></span> Philadelphia, PA <span class="slash">/</span> Signal online</div>
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Hey, I'm</p>
+          <h1 id="hero-title" class="reveal"><span>Licheng</span> <span class="name-accent">Liu.</span></h1>
+          <p class="hero-intro reveal">A high school engineer turning <em>small screens, smart sensors,</em> and code into playful machines.</p>
+        </div>
+        <div class="hero-bottom reveal">
+          <a class="scroll-cue" href="#about"><span>Explore the circuit</span><i>↓</i></a>
+          <div class="hero-socials" aria-label="Social profiles">
+            <a href="https://www.instagram.com/ll_ski77/" target="_blank" rel="noreferrer" aria-label="Instagram">IG <span>↗</span></a>
+            <a href="https://www.tiktok.com/@burgerwitnohoneym" target="_blank" rel="noreferrer" aria-label="TikTok">TK <span>↗</span></a>
+            <a href="https://github.com/lliski77" target="_blank" rel="noreferrer" aria-label="GitHub">GH <span>↗</span></a>
+          </div>
+        </div>
+        <div class="energy-orb" aria-hidden="true"><div class="orb-core"></div><div class="orb-ring ring-one"></div><div class="orb-ring ring-two"></div></div>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-label reveal"><span>01</span> About the maker</div>
+        <div class="about-grid">
+          <h2 id="about-title" class="reveal">Curiosity,<br />wired into <span>motion.</span></h2>
+          <div class="about-copy reveal">
+            <p>I’m Licheng, a student maker from Philadelphia exploring the space where hardware meets imagination. I like projects that respond, move, glow, and make people want to reach out and try them.</p>
+            <p>My work moves between embedded systems and computer vision—from games compressed onto tiny displays to real-time hand tracking that turns gestures into light. Each build is a chance to learn one layer deeper: electronics, code, interaction, and the patience to make them work together.</p>
+            <div class="status-row"><span>Currently exploring</span><strong>ESP32 · Arduino · OpenCV</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="projects-head">
+          <div class="section-label reveal"><span>02</span> Selected experiments</div>
+          <h2 id="projects-title" class="reveal">Five builds.<br /><span>One live circuit.</span></h2>
+          <p class="reveal">Press play. See the idea leave the breadboard.</p>
+        </div>
+
+        <article class="project reveal" data-project="01">
+          <div class="project-visual">
+            <video preload="metadata" playsinline poster="assets/posters/animated-eyes.jpg" aria-label="Animated OLED eyes and Pong demo">
+              <source src="assets/videos/animated-eyes.mp4" type="video/mp4" />
+            </video>
+            <button class="play-button" type="button" aria-label="Play Animated Eyes video"><span class="play-icon">▶</span><span class="play-label">Play experiment</span></button>
+            <div class="video-status"><span>01</span><span>OLED / INTERACTION</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">EXPERIMENT 01 / 05</div>
+            <h3>Animated Eyes<br /><span>+ Pocket Pong</span></h3>
+            <p class="project-hook">A tiny screen with two personalities: expressive robot eyes and a classic arcade game.</p>
+            <p class="project-description">Built around an ESP32 and a 0.96-inch OLED, this interface brings animated eyes to life through button controls. One press switches the system into a playable Pong mode, where a joystick transforms the display into a pocket-sized arcade. Programmed in the Arduino IDE to explore responsive graphics, input handling, and playful interaction on minimal hardware.</p>
+            <div class="project-meta"><span>ESP32</span><span>OLED</span><span>Arduino IDE</span><span>Joystick</span></div>
+            <button class="source-soon" type="button" disabled><span>Source</span><small>Coming soon</small></button>
+          </div>
+        </article>
+
+        <article class="project project-reverse reveal" data-project="02">
+          <div class="project-visual">
+            <video preload="metadata" playsinline poster="assets/posters/malcolm-todd.jpg" aria-label="Malcolm Todd synchronized lyrics display demo">
+              <source src="assets/videos/malcolm-todd-lyrics.mp4" type="video/mp4" />
+            </video>
+            <button class="play-button" type="button" aria-label="Play I Saw Your Face lyrics display video"><span class="play-icon">▶</span><span class="play-label">Play experiment</span></button>
+            <div class="video-status"><span>02</span><span>LCD / MUSIC</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">EXPERIMENT 02 / 05</div>
+            <h3>I Saw Your Face<br /><span>Lyric Display</span></h3>
+            <p class="project-hook">Turning a 16×2 character display into a perfectly timed visual companion for music.</p>
+            <p class="project-description">An Arduino Uno drives a 16×2 LCD through synchronized lines from “I Saw Your Face” by Malcolm Todd. The project treats timing as an interface challenge—sequencing each lyric so a limited character grid still feels expressive, musical, and intentional.</p>
+            <div class="project-meta"><span>Arduino Uno</span><span>16×2 LCD</span><span>C++</span><span>Timing</span></div>
+            <button class="source-soon" type="button" disabled><span>Source</span><small>Coming soon</small></button>
+          </div>
+        </article>
+
+        <article class="project reveal" data-project="03">
+          <div class="project-visual">
+            <video preload="metadata" playsinline poster="assets/posters/dino-game.jpg" aria-label="Joystick controlled LCD Dino game demo">
+              <source src="assets/videos/dino-game.mp4" type="video/mp4" />
+            </video>
+            <button class="play-button" type="button" aria-label="Play LCD Dino game video"><span class="play-icon">▶</span><span class="play-label">Play experiment</span></button>
+            <div class="video-status"><span>03</span><span>LCD / GAME</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">EXPERIMENT 03 / 05</div>
+            <h3>Dino,<br /><span>Recompressed.</span></h3>
+            <p class="project-hook">The browser classic, rebuilt on thirty-two characters and controlled with a joystick.</p>
+            <p class="project-description">This Arduino Uno project recreates the classic Dino runner on a 16×2 LCD. A joystick controls each jump while custom characters, obstacle timing, score logic, and collision detection squeeze an entire game loop into one remarkably small display.</p>
+            <div class="project-meta"><span>Arduino Uno</span><span>16×2 LCD</span><span>Joystick</span><span>Game Logic</span></div>
+            <button class="source-soon" type="button" disabled><span>Source</span><small>Coming soon</small></button>
+          </div>
+        </article>
+
+        <article class="project project-reverse reveal" data-project="04">
+          <div class="project-visual">
+            <video preload="metadata" playsinline poster="assets/posters/oled-lyrics.jpg" aria-label="Damned synchronized OLED lyrics display demo">
+              <source src="assets/videos/oled-lyrics.mp4" type="video/mp4" />
+            </video>
+            <button class="play-button" type="button" aria-label="Play Damned OLED lyrics video"><span class="play-icon">▶</span><span class="play-label">Play experiment</span></button>
+            <div class="video-status"><span>04</span><span>OLED / TYPOGRAPHY</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">EXPERIMENT 04 / 05</div>
+            <h3>Damned<br /><span>in 0.96 Inches</span></h3>
+            <p class="project-hook">A miniature kinetic-typography study synchronized to Miguel’s “Damned.”</p>
+            <p class="project-description">Powered by an ESP32, this 0.96-inch OLED sequences lyrics from “Damned” by Miguel in sync with the track. The build explores how pacing, line breaks, and micro-animations can create emotion and rhythm even on a monochrome screen barely larger than a postage stamp.</p>
+            <div class="project-meta"><span>ESP32</span><span>OLED</span><span>Arduino IDE</span><span>Motion Type</span></div>
+            <button class="source-soon" type="button" disabled><span>Source</span><small>Coming soon</small></button>
+          </div>
+        </article>
+
+        <article class="project reveal" data-project="05">
+          <div class="project-visual">
+            <video preload="metadata" playsinline poster="assets/posters/hand-tracking.jpg" aria-label="Real-time hand tracking LED control demo">
+              <source src="assets/videos/hand-tracking-led.mp4" type="video/mp4" />
+            </video>
+            <button class="play-button" type="button" aria-label="Play hand tracking LED control video"><span class="play-icon">▶</span><span class="play-label">Play experiment</span></button>
+            <div class="video-status"><span>05</span><span>VISION / PHYSICAL OUTPUT</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">EXPERIMENT 05 / 05</div>
+            <h3>Hand to Light,<br /><span>in Real Time.</span></h3>
+            <p class="project-hook">Computer vision counts a gesture; an Arduino turns that information into physical light.</p>
+            <p class="project-description">OpenCV and MediaPipe track a hand through a live camera feed and count the number of raised fingers. That result is sent to an Arduino Uno, which controls the corresponding LED output in real time—connecting perception software to a tangible electronic response with almost no delay.</p>
+            <div class="project-meta"><span>OpenCV</span><span>MediaPipe</span><span>Arduino Uno</span><span>Python</span></div>
+            <button class="source-soon" type="button" disabled><span>Source</span><small>Coming soon</small></button>
+          </div>
+        </article>
+      </section>
+
+      <section class="closing section-pad" aria-labelledby="closing-title">
+        <div class="closing-bolt" aria-hidden="true">ϟ</div>
+        <div class="section-label reveal"><span>03</span> Next signal</div>
+        <h2 id="closing-title" class="reveal">Still building.<br /><span>Always curious.</span></h2>
+        <p class="reveal">This is only the first five. Follow along as the circuit grows.</p>
+        <div class="closing-links reveal">
+          <a href="https://www.instagram.com/ll_ski77/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
+          <a href="https://www.tiktok.com/@burgerwitnohoneym" target="_blank" rel="noreferrer">TikTok <span>↗</span></a>
+          <a href="https://github.com/lliski77" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Licheng Liu</span>
+      <span>Designed like a circuit: every detail connected.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
