@@ -80,7 +80,7 @@ main, header, footer { position: relative; z-index: 1; }
 .project-reverse .project-visual { order: 2; } .project-reverse .project-info { order: 1; }
 .project-visual { position: relative; background: #020304; border: 1px solid var(--line); overflow: hidden; aspect-ratio: 16 / 10; isolation: isolate; }
 .project-visual::before { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; box-shadow: inset 0 0 90px rgba(0,0,0,.62); }
-.project-visual video { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.78) contrast(1.08); transition: filter .35s; }
+.project-visual video { width: 100%; height: 100%; display: block; object-fit: contain; background: #020304; filter: saturate(.9) contrast(1.04); transition: filter .35s; }
 .project-visual:hover video { filter: saturate(1) contrast(1.03); }
 .play-button { position: absolute; inset: 0; z-index: 4; width: 100%; border: 0; color: var(--white); background: rgba(3,5,8,.12); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; transition: background .3s; }
 .play-button:hover { background: rgba(3,5,8,.28); }

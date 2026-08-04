@@ -23,7 +23,7 @@ document.querySelectorAll('.project-visual').forEach((visual) => {
   const resetButton = () => {
     visual.classList.remove('is-playing');
     icon.textContent = '▶';
-    label.textContent = video.ended ? 'Replay experiment' : 'Play experiment';
+    label.textContent = video.ended ? 'Replay project' : 'Play project';
   };
 
   button.addEventListener('click', () => {
@@ -42,7 +42,7 @@ document.querySelectorAll('.project-visual').forEach((visual) => {
       video.pause();
       resetButton();
       icon.textContent = '▶';
-      label.textContent = 'Resume experiment';
+      label.textContent = 'Resume project';
     }
   });
   video.addEventListener('pause', () => { if (!video.ended) resetButton(); });
